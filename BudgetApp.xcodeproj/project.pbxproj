@@ -8,18 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		A35BB8722CF6FC04003F1D1E /* BudgetAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8712CF6FC04003F1D1E /* BudgetAppApp.swift */; };
-		A35BB8742CF6FC04003F1D1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8732CF6FC04003F1D1E /* ContentView.swift */; };
 		A35BB8762CF6FC05003F1D1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35BB8752CF6FC05003F1D1E /* Assets.xcassets */; };
 		A35BB87A2CF6FC05003F1D1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35BB8792CF6FC05003F1D1E /* Preview Assets.xcassets */; };
+		A35BB8832CF6FD29003F1D1E /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8822CF6FD28003F1D1E /* CoreDataProvider.swift */; };
+		A35BB8872CF6FD49003F1D1E /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8852CF6FD49003F1D1E /* CoreDataModel.xcdatamodeld */; };
+		A35BB8892CF6FDA2003F1D1E /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8882CF6FDA2003F1D1E /* CoreDataError.swift */; };
+		A35BB88D2CF6FDE1003F1D1E /* SelectFromView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB88C2CF6FDE1003F1D1E /* SelectFromView.swift */; };
+		A35BB88F2CF6FE1D003F1D1E /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB88E2CF6FE1D003F1D1E /* CustomInputField.swift */; };
+		A35BB8912CF6FE42003F1D1E /* SimpleDropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8902CF6FE42003F1D1E /* SimpleDropDownMenu.swift */; };
+		A35BB8942CF6FE68003F1D1E /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8932CF6FE68003F1D1E /* CustomButtonView.swift */; };
+		A35BB8972CF6FE90003F1D1E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8962CF6FE90003F1D1E /* ColorTheme.swift */; };
+		A35BB89C2CF6FEEB003F1D1E /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB89B2CF6FEEB003F1D1E /* AccountsView.swift */; };
+		A35BB8A12CF6FF21003F1D1E /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8A02CF6FF21003F1D1E /* ReportsView.swift */; };
+		A35BB8A62CF6FF7B003F1D1E /* BudgetUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8A52CF6FF7B003F1D1E /* BudgetUseCases.swift */; };
+		A35BB8A92CF6FFA6003F1D1E /* InsertBudgetListItemsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8A82CF6FFA6003F1D1E /* InsertBudgetListItemsRepositoryProtocol.swift */; };
+		A35BB8AB2CF6FFBC003F1D1E /* GetBudtetListRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8AA2CF6FFBC003F1D1E /* GetBudtetListRepositoryProtocol.swift */; };
+		A35BB8AE2CF6FFDA003F1D1E /* BudgetItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8AD2CF6FFDA003F1D1E /* BudgetItemEntity.swift */; };
+		A35BB8B22CF7000C003F1D1E /* BudgetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8B12CF7000C003F1D1E /* BudgetRepository.swift */; };
+		A35BB8B62CF70042003F1D1E /* BudgetItemsLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8B52CF70041003F1D1E /* BudgetItemsLocalDataSource.swift */; };
+		A35BB8BA2CF7007F003F1D1E /* BudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8B92CF7007E003F1D1E /* BudgetViewModel.swift */; };
+		A35BB8BD2CF70107003F1D1E /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8BC2CF70107003F1D1E /* BudgetView.swift */; };
+		A35BB8BF2CF70129003F1D1E /* BudgetSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8BE2CF70129003F1D1E /* BudgetSuccessView.swift */; };
+		A35BB8C42CF70193003F1D1E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8C32CF70193003F1D1E /* HomeView.swift */; };
+		A35BB8C62CF701AE003F1D1E /* HorizontalBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8C52CF701AE003F1D1E /* HorizontalBar.swift */; };
+		A35BB8C82CF701C0003F1D1E /* BudgetItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8C72CF701C0003F1D1E /* BudgetItemRow.swift */; };
+		A35BB8CA2CF701D9003F1D1E /* RecentTransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8C92CF701D9003F1D1E /* RecentTransactionRow.swift */; };
+		A35BB8CF2CF7020D003F1D1E /* TabIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8CE2CF7020D003F1D1E /* TabIdentifier.swift */; };
+		A35BB8D32CF70256003F1D1E /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8D22CF70256003F1D1E /* DashboardViewModel.swift */; };
+		A35BB8D62CF7026D003F1D1E /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8D52CF7026D003F1D1E /* DashboardView.swift */; };
+		A35BB8D92CF702C2003F1D1E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8D82CF702C2003F1D1E /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A35BB86E2CF6FC04003F1D1E /* BudgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35BB8712CF6FC04003F1D1E /* BudgetAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetAppApp.swift; sourceTree = "<group>"; };
-		A35BB8732CF6FC04003F1D1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A35BB8752CF6FC05003F1D1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A35BB8772CF6FC05003F1D1E /* BudgetApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BudgetApp.entitlements; sourceTree = "<group>"; };
 		A35BB8792CF6FC05003F1D1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A35BB8822CF6FD28003F1D1E /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		A35BB8862CF6FD49003F1D1E /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		A35BB8882CF6FDA2003F1D1E /* CoreDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
+		A35BB88C2CF6FDE1003F1D1E /* SelectFromView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFromView.swift; sourceTree = "<group>"; };
+		A35BB88E2CF6FE1D003F1D1E /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		A35BB8902CF6FE42003F1D1E /* SimpleDropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDropDownMenu.swift; sourceTree = "<group>"; };
+		A35BB8932CF6FE68003F1D1E /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		A35BB8962CF6FE90003F1D1E /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		A35BB89B2CF6FEEB003F1D1E /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		A35BB8A02CF6FF21003F1D1E /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
+		A35BB8A52CF6FF7B003F1D1E /* BudgetUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetUseCases.swift; sourceTree = "<group>"; };
+		A35BB8A82CF6FFA6003F1D1E /* InsertBudgetListItemsRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertBudgetListItemsRepositoryProtocol.swift; sourceTree = "<group>"; };
+		A35BB8AA2CF6FFBC003F1D1E /* GetBudtetListRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBudtetListRepositoryProtocol.swift; sourceTree = "<group>"; };
+		A35BB8AD2CF6FFDA003F1D1E /* BudgetItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetItemEntity.swift; sourceTree = "<group>"; };
+		A35BB8B12CF7000C003F1D1E /* BudgetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetRepository.swift; sourceTree = "<group>"; };
+		A35BB8B52CF70041003F1D1E /* BudgetItemsLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetItemsLocalDataSource.swift; sourceTree = "<group>"; };
+		A35BB8B92CF7007E003F1D1E /* BudgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewModel.swift; sourceTree = "<group>"; };
+		A35BB8BC2CF70107003F1D1E /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		A35BB8BE2CF70129003F1D1E /* BudgetSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSuccessView.swift; sourceTree = "<group>"; };
+		A35BB8C32CF70193003F1D1E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A35BB8C52CF701AE003F1D1E /* HorizontalBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalBar.swift; sourceTree = "<group>"; };
+		A35BB8C72CF701C0003F1D1E /* BudgetItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetItemRow.swift; sourceTree = "<group>"; };
+		A35BB8C92CF701D9003F1D1E /* RecentTransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionRow.swift; sourceTree = "<group>"; };
+		A35BB8CE2CF7020D003F1D1E /* TabIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabIdentifier.swift; sourceTree = "<group>"; };
+		A35BB8D22CF70256003F1D1E /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		A35BB8D52CF7026D003F1D1E /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A35BB8D82CF702C2003F1D1E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +104,10 @@
 		A35BB8702CF6FC04003F1D1E /* BudgetApp */ = {
 			isa = PBXGroup;
 			children = (
-				A35BB8712CF6FC04003F1D1E /* BudgetAppApp.swift */,
-				A35BB8732CF6FC04003F1D1E /* ContentView.swift */,
+				A35BB8DA2CF702ED003F1D1E /* App */,
+				A35BB8D72CF70295003F1D1E /* Root */,
+				A35BB8982CF6FEB2003F1D1E /* Features */,
+				A35BB8802CF6FD07003F1D1E /* Core */,
 				A35BB8752CF6FC05003F1D1E /* Assets.xcassets */,
 				A35BB8772CF6FC05003F1D1E /* BudgetApp.entitlements */,
 				A35BB8782CF6FC05003F1D1E /* Preview Content */,
@@ -67,6 +121,318 @@
 				A35BB8792CF6FC05003F1D1E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A35BB8802CF6FD07003F1D1E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8952CF6FE83003F1D1E /* Color */,
+				A35BB88A2CF6FDC0003F1D1E /* Components */,
+				A35BB8842CF6FD40003F1D1E /* Models */,
+				A35BB8812CF6FD1A003F1D1E /* Providers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A35BB8812CF6FD1A003F1D1E /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8822CF6FD28003F1D1E /* CoreDataProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		A35BB8842CF6FD40003F1D1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8852CF6FD49003F1D1E /* CoreDataModel.xcdatamodeld */,
+				A35BB8882CF6FDA2003F1D1E /* CoreDataError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A35BB88A2CF6FDC0003F1D1E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8922CF6FE5C003F1D1E /* Buttons */,
+				A35BB88B2CF6FDCB003F1D1E /* Inputs */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A35BB88B2CF6FDCB003F1D1E /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB88C2CF6FDE1003F1D1E /* SelectFromView.swift */,
+				A35BB88E2CF6FE1D003F1D1E /* CustomInputField.swift */,
+				A35BB8902CF6FE42003F1D1E /* SimpleDropDownMenu.swift */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
+		A35BB8922CF6FE5C003F1D1E /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8932CF6FE68003F1D1E /* CustomButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		A35BB8952CF6FE83003F1D1E /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8962CF6FE90003F1D1E /* ColorTheme.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		A35BB8982CF6FEB2003F1D1E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8CB2CF701F3003F1D1E /* Dashboard */,
+				A35BB8C02CF70166003F1D1E /* Home */,
+				A35BB8A22CF6FF3C003F1D1E /* Bugdets */,
+				A35BB89D2CF6FF07003F1D1E /* Reports */,
+				A35BB8992CF6FEB9003F1D1E /* Accounts */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A35BB8992CF6FEB9003F1D1E /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB89A2CF6FEC7003F1D1E /* Presentation */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		A35BB89A2CF6FEC7003F1D1E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB89B2CF6FEEB003F1D1E /* AccountsView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A35BB89D2CF6FF07003F1D1E /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB89E2CF6FF0C003F1D1E /* Presentation */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		A35BB89E2CF6FF0C003F1D1E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB89F2CF6FF11003F1D1E /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A35BB89F2CF6FF11003F1D1E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8A02CF6FF21003F1D1E /* ReportsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A35BB8A22CF6FF3C003F1D1E /* Bugdets */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8B72CF70066003F1D1E /* Presentation */,
+				A35BB8AF2CF6FFF3003F1D1E /* Data */,
+				A35BB8A32CF6FF52003F1D1E /* Domain */,
+			);
+			path = Bugdets;
+			sourceTree = "<group>";
+		};
+		A35BB8A32CF6FF52003F1D1E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8AC2CF6FFCE003F1D1E /* Entities */,
+				A35BB8A72CF6FF96003F1D1E /* Repository */,
+				A35BB8A42CF6FF61003F1D1E /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A35BB8A42CF6FF61003F1D1E /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8A52CF6FF7B003F1D1E /* BudgetUseCases.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		A35BB8A72CF6FF96003F1D1E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8A82CF6FFA6003F1D1E /* InsertBudgetListItemsRepositoryProtocol.swift */,
+				A35BB8AA2CF6FFBC003F1D1E /* GetBudtetListRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A35BB8AC2CF6FFCE003F1D1E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8AD2CF6FFDA003F1D1E /* BudgetItemEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A35BB8AF2CF6FFF3003F1D1E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8B32CF7002D003F1D1E /* DataSource */,
+				A35BB8B02CF6FFF6003F1D1E /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A35BB8B02CF6FFF6003F1D1E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8B12CF7000C003F1D1E /* BudgetRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A35BB8B32CF7002D003F1D1E /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8B42CF70039003F1D1E /* LocalData */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		A35BB8B42CF70039003F1D1E /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8B52CF70041003F1D1E /* BudgetItemsLocalDataSource.swift */,
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
+		A35BB8B72CF70066003F1D1E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8BB2CF70101003F1D1E /* Views */,
+				A35BB8B82CF7006C003F1D1E /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A35BB8B82CF7006C003F1D1E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8B92CF7007E003F1D1E /* BudgetViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A35BB8BB2CF70101003F1D1E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8BC2CF70107003F1D1E /* BudgetView.swift */,
+				A35BB8BE2CF70129003F1D1E /* BudgetSuccessView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A35BB8C02CF70166003F1D1E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8C12CF7017C003F1D1E /* Presentation */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A35BB8C12CF7017C003F1D1E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8C22CF70182003F1D1E /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A35BB8C22CF70182003F1D1E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8C32CF70193003F1D1E /* HomeView.swift */,
+				A35BB8C52CF701AE003F1D1E /* HorizontalBar.swift */,
+				A35BB8C72CF701C0003F1D1E /* BudgetItemRow.swift */,
+				A35BB8C92CF701D9003F1D1E /* RecentTransactionRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A35BB8CB2CF701F3003F1D1E /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8D02CF70239003F1D1E /* Presentation */,
+				A35BB8CC2CF701F9003F1D1E /* Domain */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A35BB8CC2CF701F9003F1D1E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8CD2CF701FD003F1D1E /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A35BB8CD2CF701FD003F1D1E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8CE2CF7020D003F1D1E /* TabIdentifier.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A35BB8D02CF70239003F1D1E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8D42CF70266003F1D1E /* Views */,
+				A35BB8D12CF70245003F1D1E /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A35BB8D12CF70245003F1D1E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8D22CF70256003F1D1E /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A35BB8D42CF70266003F1D1E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8D52CF7026D003F1D1E /* DashboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A35BB8D72CF70295003F1D1E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8D82CF702C2003F1D1E /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A35BB8DA2CF702ED003F1D1E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A35BB8712CF6FC04003F1D1E /* BudgetAppApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +505,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35BB8742CF6FC04003F1D1E /* ContentView.swift in Sources */,
+				A35BB8C82CF701C0003F1D1E /* BudgetItemRow.swift in Sources */,
+				A35BB88D2CF6FDE1003F1D1E /* SelectFromView.swift in Sources */,
+				A35BB8972CF6FE90003F1D1E /* ColorTheme.swift in Sources */,
+				A35BB8D32CF70256003F1D1E /* DashboardViewModel.swift in Sources */,
+				A35BB8CA2CF701D9003F1D1E /* RecentTransactionRow.swift in Sources */,
+				A35BB8BA2CF7007F003F1D1E /* BudgetViewModel.swift in Sources */,
+				A35BB8D92CF702C2003F1D1E /* RootView.swift in Sources */,
 				A35BB8722CF6FC04003F1D1E /* BudgetAppApp.swift in Sources */,
+				A35BB8C42CF70193003F1D1E /* HomeView.swift in Sources */,
+				A35BB8A92CF6FFA6003F1D1E /* InsertBudgetListItemsRepositoryProtocol.swift in Sources */,
+				A35BB8AB2CF6FFBC003F1D1E /* GetBudtetListRepositoryProtocol.swift in Sources */,
+				A35BB8942CF6FE68003F1D1E /* CustomButtonView.swift in Sources */,
+				A35BB8892CF6FDA2003F1D1E /* CoreDataError.swift in Sources */,
+				A35BB8BD2CF70107003F1D1E /* BudgetView.swift in Sources */,
+				A35BB8AE2CF6FFDA003F1D1E /* BudgetItemEntity.swift in Sources */,
+				A35BB88F2CF6FE1D003F1D1E /* CustomInputField.swift in Sources */,
+				A35BB89C2CF6FEEB003F1D1E /* AccountsView.swift in Sources */,
+				A35BB8D62CF7026D003F1D1E /* DashboardView.swift in Sources */,
+				A35BB8CF2CF7020D003F1D1E /* TabIdentifier.swift in Sources */,
+				A35BB8C62CF701AE003F1D1E /* HorizontalBar.swift in Sources */,
+				A35BB8BF2CF70129003F1D1E /* BudgetSuccessView.swift in Sources */,
+				A35BB8872CF6FD49003F1D1E /* CoreDataModel.xcdatamodeld in Sources */,
+				A35BB8832CF6FD29003F1D1E /* CoreDataProvider.swift in Sources */,
+				A35BB8A12CF6FF21003F1D1E /* ReportsView.swift in Sources */,
+				A35BB8B22CF7000C003F1D1E /* BudgetRepository.swift in Sources */,
+				A35BB8912CF6FE42003F1D1E /* SimpleDropDownMenu.swift in Sources */,
+				A35BB8B62CF70042003F1D1E /* BudgetItemsLocalDataSource.swift in Sources */,
+				A35BB8A62CF6FF7B003F1D1E /* BudgetUseCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +751,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A35BB8852CF6FD49003F1D1E /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A35BB8862CF6FD49003F1D1E /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = A35BB8862CF6FD49003F1D1E /* CoreDataModel.xcdatamodel */;
+			name = CoreDataModel.xcdatamodeld;
+			path = /Users/martinwainaina/Desktop/Swift/BudgetApp/BudgetApp/Core/Models/CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A35BB8662CF6FC04003F1D1E /* Project object */;
 }

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BudgetAppApp: App {
+    @StateObject var dashboardViewModel = DashboardViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(dashboardViewModel)
         }
     }
 }
