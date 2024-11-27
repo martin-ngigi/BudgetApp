@@ -14,6 +14,11 @@ struct HomeView: View {
     
     @State var total = 0.0
     @State var barItems: [Double] = []
+    
+    var prompt: String = ""
+    var options: [String] = ["JAN", "FEB", "MARCH", "APRIL", "JUNE", "JULY", "AUG", "SEP", "OCT", "NOV", "DEC"]
+    @State var selectionCurrency: String = "JUNE"
+    @State private var isExpanded = false
 
     var body: some View {
         NavigationView{
@@ -76,10 +81,31 @@ struct HomeView: View {
                                 
                                 Spacer()
                                 
-                                SelectFromView(title: "June") {
+//                                SelectFromView(title: "June") {
+//                                    
+//                                }
+//                                .frame(width: 80, height: 30)
+                                
+                                VStack(alignment: .leading, spacing: 0) {
+                                    Picker(selection: $selectionCurrency, label: Text(prompt)) {
+                                        ForEach(options, id: \.self) { option in
+                                            Text(option).tag(option)
+                                                .font(.system(size: 14, weight: .light, design: .rounded))
+                                                .foregroundColor(Color.theme.blackAndWhite)
+                                                .frame(maxWidth: .infinity, alignment: .leading)
+                                        }
+                                    }
+                                    .pickerStyle(MenuPickerStyle())
+                                    .foregroundColor(Color.theme.blackAndWhite)
                                     
                                 }
-                                .frame(width: 80, height: 30)
+//                                .padding(.horizontal, 10)
+                                .padding(0)
+                                .background(Color.clear)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 6)
+                                        .stroke(Color.gray, lineWidth: 1)
+                                )
                             }
                             
                                 

@@ -84,7 +84,7 @@ struct DashboardView: View {
                             .scaledToFit()
                             .frame(width: 25, height: 25)
                             .foregroundColor(dashboardViewModel.activeTab == TabIdentifier.home ? Color.green : Color.gray)
-                        Text("Accounts")
+                        Text("Account")
                             .foregroundColor(dashboardViewModel.activeTab == TabIdentifier.home ? Color.green : Color.gray)
                     }
                 }
