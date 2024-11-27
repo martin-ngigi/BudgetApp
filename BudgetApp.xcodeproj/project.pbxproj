@@ -37,6 +37,7 @@
 		A35BB8D32CF70256003F1D1E /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8D22CF70256003F1D1E /* DashboardViewModel.swift */; };
 		A35BB8D62CF7026D003F1D1E /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8D52CF7026D003F1D1E /* DashboardView.swift */; };
 		A35BB8D92CF702C2003F1D1E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BB8D82CF702C2003F1D1E /* RootView.swift */; };
+		A35BB8DC2CF70EEF003F1D1E /* README.MD in Resources */ = {isa = PBXBuildFile; fileRef = A35BB8DB2CF70EEF003F1D1E /* README.MD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		A35BB8D22CF70256003F1D1E /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		A35BB8D52CF7026D003F1D1E /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		A35BB8D82CF702C2003F1D1E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A35BB8DB2CF70EEF003F1D1E /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		A35BB8652CF6FC04003F1D1E = {
 			isa = PBXGroup;
 			children = (
+				A35BB8DB2CF70EEF003F1D1E /* README.MD */,
 				A35BB8702CF6FC04003F1D1E /* BudgetApp */,
 				A35BB86F2CF6FC04003F1D1E /* Products */,
 			);
@@ -493,6 +496,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35BB8DC2CF70EEF003F1D1E /* README.MD in Resources */,
 				A35BB87A2CF6FC05003F1D1E /* Preview Assets.xcassets in Resources */,
 				A35BB8762CF6FC05003F1D1E /* Assets.xcassets in Resources */,
 			);
