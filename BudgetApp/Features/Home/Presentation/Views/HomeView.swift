@@ -19,6 +19,17 @@ struct HomeView: View {
     var options: [String] = ["JAN", "FEB", "MARCH", "APRIL", "JUNE", "JULY", "AUG", "SEP", "OCT", "NOV", "DEC"]
     @State var selectionCurrency: String = "JUNE"
     @State private var isExpanded = false
+    
+    // Generate a random color for each segment
+    var colors: [Color] {
+        barItems.map { _ in
+            Color(
+                red: Double.random(in: 0...1),
+                green: Double.random(in: 0...1),
+                blue: Double.random(in: 0...1)
+            )
+        }
+    }
 
     var body: some View {
         NavigationView{
@@ -99,7 +110,6 @@ struct HomeView: View {
                                     .foregroundColor(Color.theme.blackAndWhite)
                                     
                                 }
-//                                .padding(.horizontal, 10)
                                 .padding(0)
                                 .background(Color.clear)
                                 .overlay(
@@ -109,13 +119,19 @@ struct HomeView: View {
                             }
                             
                                 
-                            HorizontalBar(data: barItems)
+                            HorizontalBar(data: barItems, colors: colors)
                             
-                            VStack(spacing: 0){
-                                ForEach(budgetItemList, id: \.itemId){ item in
-
-                                    BudgetItemRow(color: .red, title: item.productName, currency: item.currency, price: "\(item.price)")
+                            VStack(spacing: 0) {
+                                ForEach(Array(budgetItemList.enumerated()), id: \.element.itemId) { index, item in
+                                    BudgetItemRow(color: colors[index], title: item.productName, currency: item.currency, price: "\(item.price)")
                                         .padding(0) // Remove any default padding
+                                        .background(Color.clear) // Optional: Set background to clear if needed
+                                        .overlay(
+                                            Text("\(index)") // Display the index (optional)
+                                                .foregroundColor(.white) // Change color as needed
+                                                .padding(4), // Add some padding around the index text
+                                            alignment: .topLeading // Positioning of the index text
+                                        )
                                 }
                             }
                             

@@ -10,17 +10,7 @@ import SwiftUI
 
 struct HorizontalBar: View {
     let data: [Double]
-    
-    // Generate a random color for each segment
-    var colors: [Color] {
-        data.map { _ in
-            Color(
-                red: Double.random(in: 0...1),
-                green: Double.random(in: 0...1),
-                blue: Double.random(in: 0...1)
-            )
-        }
-    }
+    let colors: [Color]
     
     var normalizedData: [Double] {
         let total = data.reduce(0, +)
@@ -69,5 +59,5 @@ struct HorizontalBar: View {
 
 
 #Preview {
-    HorizontalBar(data: [40.0, 20.0, 30.0, 10.0])
+    HorizontalBar(data: [40.0, 20.0, 30.0, 10.0], colors: [])
 }
