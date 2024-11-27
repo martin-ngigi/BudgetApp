@@ -46,6 +46,20 @@ struct DashboardView: View {
                 }
                 .tag(TabIdentifier.budgets)
             
+            Text("Add Shortcut")
+                .tabItem {
+                    VStack{
+                        Image(systemName: "plus.circle.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 80, height: 80)
+                            .foregroundColor(Color.theme.greenColorDark)
+                            .background(Color.theme.greenColorDark)
+                            .accentColor(Color.green) // Sets the selected tab color
+                        
+                    }
+                }
+            
             ReportsView()
                 .tabItem {
                     VStack{

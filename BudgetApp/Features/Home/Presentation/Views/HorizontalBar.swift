@@ -35,10 +35,13 @@ struct HorizontalBar: View {
                         Rectangle()
                             .fill(colors[index])
                             .frame(width: geometry.size.width * CGFloat(normalizedData[index]))
+                            .padding(.horizontal, 2)
+                            .cornerRadius(7)
                     }
                 }
                 .frame(height: 20)
                 .clipShape(RoundedRectangle(cornerRadius: 5))
+                .cornerRadius(7)
             }
             .frame(height: 20)
             
